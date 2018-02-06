@@ -1,0 +1,246 @@
+/**
+ * @description: 自动翻页动画书
+ * @author: Albert
+ */
+/*通用整体部分，开始*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.main {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #e6e6e6;
+}
+.content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*通用整体部分，结束*/
+/*播放部分，开始*/
+.playerBox {
+  overflow: visible;
+  height: 450px;
+  width: 660px;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 1px #2b2b2b;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  perspective-origin: 50% 50%;
+}
+.page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+}
+.page-0 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #be2227;
+  transform: translateZ(0px);
+}
+.page-1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-1px);
+}
+.page-1::before {
+  position: absolute;
+  content: "1";
+  bottom: 0;
+  right: 0;
+}
+.page-2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-2px);
+}
+.page-2::before {
+  position: absolute;
+  content: "2";
+  bottom: 0;
+  right: 0;
+}
+.page-3 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-3px);
+}
+.page-3::before {
+  position: absolute;
+  content: "3";
+  bottom: 0;
+  right: 0;
+}
+.page-4 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-4px);
+}
+.page-4::before {
+  position: absolute;
+  content: "4";
+  bottom: 0;
+  right: 0;
+}
+.page-5 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-5px);
+}
+.page-5::before {
+  position: absolute;
+  content: "5";
+  bottom: 0;
+  right: 0;
+}
+.page-6 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-6px);
+}
+.page-6::before {
+  position: absolute;
+  content: "6";
+  bottom: 0;
+  right: 0;
+}
+.page-7 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-7px);
+}
+.page-7::before {
+  position: absolute;
+  content: "7";
+  bottom: 0;
+  right: 0;
+}
+.page-8 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-8px);
+}
+.page-8::before {
+  position: absolute;
+  content: "8";
+  bottom: 0;
+  right: 0;
+}
+.page-9 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  display: block;
+  background: #f2f2f2;
+  transform: translateZ(-9px);
+}
+.page-9::before {
+  position: absolute;
+  content: "9";
+  bottom: 0;
+  right: 0;
+}
+#page0 {
+  font-size: 400%;
+  color: white;
+}
+/*播放部分，结束*/
+/*播放控制器部分，开始*/
+.playBox {
+  margin: 4em 0 0 0;
+  user-select: none;
+}
+/*播放控制器部分，结束*/

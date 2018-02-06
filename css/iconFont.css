@@ -1,0 +1,39 @@
+/*
+ * @description: iconfont的使用
+ * @author Albert
+ */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/*播放器控制icon,开始*/
+.playBox-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  color: #2b2b2b;
+  font-size: 2.5em;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all .4s;
+}
+.playBox-icon:hover {
+  color: #787878;
+}
+.playBox-iconBig {
+  font-size: 3.5em;
+}
+#playBox-stop {
+  display: none;
+  font-size: 3.5em;
+}
+#playBox-play {
+  display: inline;
+  font-size: 3.5em;
+}
+/*播放器控制icon,结束*/

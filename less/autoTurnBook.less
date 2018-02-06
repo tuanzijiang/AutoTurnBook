@@ -1,0 +1,110 @@
+/**
+ * @description: 自动翻页动画书
+ * @author: Albert
+ */
+//variable
+@pageNum: 10;
+
+//selector
+/*通用整体部分，开始*/
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.main{
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: darken(white,10%);
+}
+.content{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*通用整体部分，结束*/
+
+/*播放部分，开始*/
+
+.playerBox{
+  overflow: visible;
+  height: 450px;
+  width: 660px;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 1px #2b2b2b;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  perspective-origin: 50% 50%;
+}
+.page{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43,43,43,.1),0 0 50px 1px rgba(43,43,43,.1) inset ;
+}
+
+
+//page generate
+.pageGenerate(@pageNum);
+
+.pageGenerate(@n,@i:0) when (@i<@n){
+  //首页
+  .page-@{i} when(@i = 0){
+    .page;
+    display: block;
+    background: #be2227;
+    transform: translateZ(0px - @i);
+  }
+
+  //其他页面
+  .page-@{i} when(not (@i = 0) ){
+    .page;
+    display: block;
+    background: #f2f2f2;
+    transform: translateZ(0px - @i);
+  }
+  //其他页面的收尾伪元素
+  .page-@{i}::before when(not (@i = 0) ){
+    position: absolute;
+    content: "@{i}";
+    bottom: 0;
+    right: 0;
+  }
+
+  .pageGenerate(@pageNum,@i+1);
+}
+
+#page0{
+  font-size: 400%;
+  color: white;
+}
+
+
+//#cover{
+//  .page;
+//  background: darken(#D4262B,5%);
+//}
+
+/*播放部分，结束*/
+
+/*播放控制器部分，开始*/
+.playBox{
+  margin: 4em 0 0 0;
+  user-select: none;
+}
+/*播放控制器部分，结束*/
+
+
+
