@@ -3,7 +3,7 @@
  * @author: Albert
  */
 //variable
-@pageNum: 10;
+@pageNum: 30;
 
 //selector
 /*通用整体部分，开始*/
@@ -32,7 +32,6 @@ html,body{
 /*通用整体部分，结束*/
 
 /*播放部分，开始*/
-
 .playerBox{
   overflow: visible;
   height: 450px;
@@ -48,22 +47,23 @@ html,body{
   height: 100%;
   width: 100%;
   position: absolute;
+  overflow: hidden;
+  display: block;//开发时控制页面消失
   top: 0;
   left: 0;
-  transition: all 2s;
+  transition: all .1s;
   transform-origin: left center;
   box-shadow: 0 0 3px 1px rgba(43,43,43,.1),0 0 50px 1px rgba(43,43,43,.1) inset ;
 }
 
 
-//page generate
+//播放部分，page生成器，开始
 .pageGenerate(@pageNum);
 
 .pageGenerate(@n,@i:0) when (@i<@n){
   //首页
   .page-@{i} when(@i = 0){
     .page;
-    display: block;
     background: #be2227;
     transform: translateZ(0px - @i);
   }
@@ -71,7 +71,6 @@ html,body{
   //其他页面
   .page-@{i} when(not (@i = 0) ){
     .page;
-    display: block;
     background: #f2f2f2;
     transform: translateZ(0px - @i);
   }
@@ -79,24 +78,931 @@ html,body{
   .page-@{i}::before when(not (@i = 0) ){
     position: absolute;
     content: "@{i}";
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 5px;
   }
-
+  //递归调用
   .pageGenerate(@pageNum,@i+1);
 }
-
+//播放部分，page生成器，结束
+//播放部分，小人组件，开始
+.people{
+  position: absolute;
+  overflow: visible;
+}
+.people-header{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(transparent 50%, #2b2b2b 50%,#2b2b2b 60%,transparent 60%);
+}
+.peopleHand{
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+}
+.peopleFoot{
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+}
+.people-body{
+  position: absolute;
+  width: 75px;
+  height: 3px;
+  background: #2b2b2b;
+}
+//播放部分，小人组件，结束
+//播放部分，I组建，开始
+.font-I{
+  position: absolute;
+  overflow: visible;
+}
+.font-I1{
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  background: #2b2b2b;
+  transform: translate3d(0,0,0);
+}
+.font-I2{
+  position: absolute;
+  width: 30px;
+  height: 120px;
+  background: #2b2b2b;
+  transform: translate3d(15px,24px,0);
+}
+.font-I3{
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  background: #2b2b2b;
+  transform: translate3d(0,143px,0);
+}
+//播放部分，I组建，结束
+//播放部分，每页单独样式，开始
 #page0{
-  font-size: 400%;
-  color: white;
+  .page0-font{
+    background: white;
+  }
+  .page0-header{
+    position: absolute;
+    right: 30px;
+    bottom: 175px;
+    font-family: fzphjt;
+    color: white;
+    font-size: 500%;
+  }
+  .page0-author{
+    position: absolute;
+    right: 30px;
+    bottom: 155px;
+    font-family: fzphjt;
+    color: white;
+    font-size: 150%;
+  }
 }
 
+#page1{
+  .people{
+    transform: translate3d(-35px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-18px,83px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(23px,47px,0) rotate(5deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(58px,26px,0) rotate(115deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(-23px,42px,0) rotate(5deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(-49px,15px,0) rotate(85deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(12px,137px,0) rotate(30deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(51px,176px,0) rotate(60deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-8px,150px,0) rotate(80deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-12px,205px,0) rotate(110deg);
+  }
+  .font-I{
+    transform: translate3d(-86px,98px,0) rotate(-80deg);
+  }
+}
 
-//#cover{
-//  .page;
-//  background: darken(#D4262B,5%);
-//}
+#page2{
+  .people{
+    transform: translate3d(100px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-18px,83px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(23px,47px,0) rotate(5deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(58px,26px,0) rotate(115deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(-23px,42px,0) rotate(5deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(-49px,15px,0) rotate(85deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(12px,137px,0) rotate(30deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(51px,176px,0) rotate(60deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-8px,150px,0) rotate(80deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-12px,205px,0) rotate(110deg);
+  }
+  .font-I{
+    transform: translate3d(49px,98px,0) rotate(-80deg);
+  }
+}
 
+#page3{
+  .people{
+    transform: translate3d(125px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-18px,83px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(23px,47px,0) rotate(5deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(58px,26px,0) rotate(115deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(-23px,42px,0) rotate(5deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(-49px,15px,0) rotate(85deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(12px,137px,0) rotate(30deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(13px,169px,0) rotate(145deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-6px,149px,0) rotate(75deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-6px,206px,0) rotate(105deg);
+  }
+  .font-I{
+    transform: translate3d(73px,98px,0) rotate(-80deg);
+  }
+}
+
+#page4{
+  .people{
+    transform: translate3d(150px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-18px,83px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(23px,47px,0) rotate(5deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(58px,26px,0) rotate(115deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(-23px,42px,0) rotate(5deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(-49px,15px,0) rotate(85deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(4px,145px,0) rotate(55deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(23px,197px,0) rotate(85deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-15px,150px,0) rotate(92deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-40px,163px,0) rotate(35deg);
+  }
+  .font-I{
+    transform: translate3d(98px,98px,0) rotate(-80deg);
+  }
+}
+
+#page5{
+  .people{
+    transform: translate3d(175px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-18px,83px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(23px,47px,0) rotate(5deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(58px,26px,0) rotate(115deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(-23px,42px,0) rotate(5deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(-49px,15px,0) rotate(85deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(-1px,147px,0) rotate(65deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(-18px,173px,0) rotate(0deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-6px,149px,0) rotate(75deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-6px,206px,0) rotate(105deg);
+  }
+  .font-I{
+    transform: translate3d(123px,98px,0) rotate(-80deg);
+  }
+}
+
+#page6{
+  .people{
+    transform: translate3d(200px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-18px,83px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(23px,47px,0) rotate(5deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(66px,33px,0) rotate(140deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(-23px,27px,0) rotate(40deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(-37px,-13px,0) rotate(102deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(4px,145px,0) rotate(55deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(13px,197px,0) rotate(105deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-15px,150px,0) rotate(92deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-44px,174px,0) rotate(10deg);
+  }
+  .font-I{
+    transform: translate3d(170px,65px,0) rotate(-65deg);
+  }
+}
+
+#page7{
+  .people{
+    transform: translate3d(225px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-18px,83px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(20px,55px,0) rotate(25deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(66px,70px,0) rotate(10deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(-15px,25px,0) rotate(55deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(-13px,-14px,0) rotate(132deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(0,148px,0) rotate(65deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(5px,203px,0) rotate(105deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-13px,150px,0) rotate(88deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-37px,193px,0) rotate(-30deg);
+  }
+  .font-I{
+    transform: translate3d(235px,57px,0) rotate(-38deg);
+  }
+}
+
+#page8{
+
+  .people{
+    transform: translate3d(250px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-28px,78px,0) rotate(110deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(15px,62px,0) rotate(45deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(45px,92px,0) rotate(45deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(19px,33px,0) rotate(-25deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(64px,12px,0) rotate(-25deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(-13px,135px,0) rotate(50deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(24px,179px,0) rotate(50deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-52px,135px,0) rotate(130deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-90px,180px,0) rotate(130deg);
+  }
+  .font-I{
+    transform: translate3d(360px,80px,0) rotate(19deg);
+  }
+}
+
+#page9{
+  .people{
+    transform: translate3d(250px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-28px,78px,0) rotate(110deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(7px,64px,0) rotate(65deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(27px,107px,0) rotate(65deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(19px,53px,0) rotate(25deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(64px,74px,0) rotate(25deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(-13px,135px,0) rotate(50deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(24px,179px,0) rotate(50deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-52px,135px,0) rotate(130deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-90px,180px,0) rotate(130deg);
+  }
+  .font-I{
+    transform: translate3d(380px,115px,0) rotate(19deg);
+  }
+}
+
+#page10{
+  .people{
+    transform: translate3d(235px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-17px,79px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-45px,97px,0) rotate(130deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(19px,53px,0) rotate(25deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(54px,84px,0) rotate(59deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(6px,138px,0) rotate(50deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(43px,182px,0) rotate(50deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-30px,141px,0) rotate(125deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-57px,190px,0) rotate(112deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page11{
+  .people{
+    transform: translate3d(220px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-17px,79px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-27px,103px,0) rotate(83deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(19px,53px,0) rotate(25deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(54px,84px,0) rotate(59deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(6px,138px,0) rotate(50deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(43px,182px,0) rotate(50deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-30px,141px,0) rotate(125deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-57px,190px,0) rotate(112deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page12{
+  .people{
+    transform: translate3d(200px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-17px,79px,0) rotate(95deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-27px,103px,0) rotate(83deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(19px,53px,0) rotate(25deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(54px,84px,0) rotate(59deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(-19px,145px,0) rotate(103deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(2px,182px,0) rotate(20deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-30px,141px,0) rotate(125deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-57px,190px,0) rotate(112deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page13{
+  .people{
+    transform: translate3d(150px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-10px,79px,0) rotate(85deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-45px,61px,0) rotate(50deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(13px,63px,0) rotate(55deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(23px,108px,0) rotate(100deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(6px,145px,0) rotate(80deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(16px,200px,0) rotate(80deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-17px,141px,0) rotate(125deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-7px,175px,0) rotate(20deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page14{
+  .people{
+    transform: translate3d(100px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-10px,79px,0) rotate(85deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-45px,61px,0) rotate(50deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(21px,57px,0) rotate(33deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(32px,93px,0) rotate(110deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(15px,140px,0) rotate(60deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(44px,140px,0) rotate(120deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-17px,141px,0) rotate(125deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-19px,190px,0) rotate(60deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page15{
+  .people{
+    transform: translate3d(30px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-10px,79px,0) rotate(85deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-45px,61px,0) rotate(50deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(21px,57px,0) rotate(33deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(32px,93px,0) rotate(110deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(15px,140px,0) rotate(60deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(50px,144px,0) rotate(135deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-19px,136px,0) rotate(135deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-44px,185px,0) rotate(100deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page16{
+  .people{
+    transform: translate3d(-20px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-10px,79px,0) rotate(85deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-45px,61px,0) rotate(50deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(21px,54px,0) rotate(20deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(38px,86px,0) rotate(105deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(23px,138px,0) rotate(45deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(64px,138px,0) rotate(135deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-19px,136px,0) rotate(135deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-44px,185px,0) rotate(100deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page17{
+  .people{
+    transform: translate3d(-40px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-10px,79px,0) rotate(85deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-45px,61px,0) rotate(50deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(21px,54px,0) rotate(20deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(38px,86px,0) rotate(105deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(23px,138px,0) rotate(65deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(64px,173px,0) rotate(16deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-19px,136px,0) rotate(135deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-44px,185px,0) rotate(100deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page18{
+  .people{
+    transform: translate3d(-40px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-10px,79px,0) rotate(85deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-45px,61px,0) rotate(50deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(21px,54px,0) rotate(20deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(38px,86px,0) rotate(105deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(23px,138px,0) rotate(65deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(28px,191px,0) rotate(105deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-19px,136px,0) rotate(135deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-44px,185px,0) rotate(100deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+#page19{
+  .people{
+    transform: translate3d(-40px,100px,0);
+  }
+  .people-body{
+    transform: translate3d(-10px,79px,0) rotate(85deg);
+  }
+  .people-leftHand1{
+    .peopleHand;
+    transform: translate3d(-15px,61px,0) rotate(130deg);
+  }
+  .people-leftHand2{
+    .peopleHand;
+    transform: translate3d(-45px,61px,0) rotate(50deg);
+  }
+  .people-rightHand1{
+    .peopleHand;
+    transform: translate3d(21px,54px,0) rotate(20deg);
+  }
+  .people-rightHand2{
+    .peopleHand;
+    transform: translate3d(38px,86px,0) rotate(105deg);
+  }
+  .people-leftFoot1{
+    .peopleFoot;
+    transform: translate3d(23px,138px,0) rotate(65deg);
+  }
+  .people-leftFoot2{
+    .peopleFoot;
+    transform: translate3d(28px,191px,0) rotate(105deg);
+  }
+  .people-rightFoot1{
+    .peopleFoot;
+    transform: translate3d(-19px,136px,0) rotate(135deg);
+  }
+  .people-rightFoot2{
+    .peopleFoot;
+    transform: translate3d(-44px,185px,0) rotate(100deg);
+  }
+  .font-I{
+    transform: translate3d(380px,136px,0) rotate(0deg);
+  }
+}
+
+//播放部分，每页单独样式，结束
 /*播放部分，结束*/
 
 /*播放控制器部分，开始*/

@@ -1,9 +1,9 @@
 //variable
 var playFlag=false;//是否播放的标志
-var totalPage=4;//总页数的标志
+var totalPage=18;//总页数的标志
 var currentPage=0;//当前页面
 var changeByHand=false;//是否进入手动翻书
-var intervalCSS=2000;//翻一次页面的ms数
+var intervalCSS=600;//翻一次页面的ms数
 var autoFuncHandler;//自动翻书的句柄
 var turnDirection=true;//翻页的方向,true-正向,false-负向
 
@@ -43,7 +43,7 @@ document.getElementById("playBox-play").addEventListener("click",function () {
 });
 //停止播放事件
 document.getElementById("playBox-stop").addEventListener("click",function () {
-   //改变暂停按钮的样式
+    //改变暂停按钮的样式
     document.getElementById("playBox-stop").style.cssText="display:none";
     document.getElementById("playBox-play").style.cssText="display:inline";
     playFlag=false;
@@ -129,5 +129,3 @@ var turnToLast=function () {
         currentPage=currentPage-1>0?currentPage-1:0;
     }
 };
-
-
