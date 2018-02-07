@@ -1,6 +1,6 @@
 //variable
 var playFlag=false;//是否播放的标志
-var totalPage=18;//总页数的标志
+var totalPage=20;//总页数的标志
 var currentPage=0;//当前页面
 var changeByHand=false;//是否进入手动翻书
 var intervalCSS=600;//翻一次页面的ms数

@@ -44,7 +44,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -56,7 +56,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -70,7 +70,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -90,7 +90,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -110,7 +110,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -130,7 +130,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -150,7 +150,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -170,7 +170,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -190,7 +190,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -210,7 +210,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -230,7 +230,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -250,7 +250,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -270,7 +270,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -290,7 +290,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -310,7 +310,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -330,7 +330,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -350,7 +350,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -370,7 +370,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -390,7 +390,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -410,7 +410,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -430,7 +430,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -450,7 +450,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -470,7 +470,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -490,7 +490,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -510,7 +510,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -530,7 +530,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -550,7 +550,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -570,7 +570,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -590,7 +590,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -610,7 +610,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -630,7 +630,7 @@ body {
   width: 100%;
   position: absolute;
   overflow: hidden;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   transition: all .1s;
@@ -642,6 +642,206 @@ body {
 .page-29::before {
   position: absolute;
   content: "29";
+  bottom: 5px;
+  right: 5px;
+}
+.page-30 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-30px);
+}
+.page-30::before {
+  position: absolute;
+  content: "30";
+  bottom: 5px;
+  right: 5px;
+}
+.page-31 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-31px);
+}
+.page-31::before {
+  position: absolute;
+  content: "31";
+  bottom: 5px;
+  right: 5px;
+}
+.page-32 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-32px);
+}
+.page-32::before {
+  position: absolute;
+  content: "32";
+  bottom: 5px;
+  right: 5px;
+}
+.page-33 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-33px);
+}
+.page-33::before {
+  position: absolute;
+  content: "33";
+  bottom: 5px;
+  right: 5px;
+}
+.page-34 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-34px);
+}
+.page-34::before {
+  position: absolute;
+  content: "34";
+  bottom: 5px;
+  right: 5px;
+}
+.page-35 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-35px);
+}
+.page-35::before {
+  position: absolute;
+  content: "35";
+  bottom: 5px;
+  right: 5px;
+}
+.page-36 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-36px);
+}
+.page-36::before {
+  position: absolute;
+  content: "36";
+  bottom: 5px;
+  right: 5px;
+}
+.page-37 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-37px);
+}
+.page-37::before {
+  position: absolute;
+  content: "37";
+  bottom: 5px;
+  right: 5px;
+}
+.page-38 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-38px);
+}
+.page-38::before {
+  position: absolute;
+  content: "38";
+  bottom: 5px;
+  right: 5px;
+}
+.page-39 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+  transition: all .1s;
+  transform-origin: left center;
+  box-shadow: 0 0 3px 1px rgba(43, 43, 43, 0.1), 0 0 50px 1px rgba(43, 43, 43, 0.1) inset;
+  background: #f2f2f2;
+  transform: translateZ(-39px);
+}
+.page-39::before {
+  position: absolute;
+  content: "39";
   bottom: 5px;
   right: 5px;
 }
@@ -697,6 +897,9 @@ body {
   height: 25px;
   background: #2b2b2b;
   transform: translate3d(0, 143px, 0);
+}
+.font-love {
+  position: absolute;
 }
 #page0 .page0-font {
   background: white;
@@ -1912,14 +2115,14 @@ body {
   width: 50px;
   height: 3px;
   background: #2b2b2b;
-  transform: translate3d(21px, 54px, 0) rotate(20deg);
+  transform: translate3d(30px, 51px, 0) rotate(-20deg);
 }
 #page19 .people-rightHand2 {
   position: absolute;
   width: 50px;
   height: 3px;
   background: #2b2b2b;
-  transform: translate3d(38px, 86px, 0) rotate(105deg);
+  transform: translate3d(57px, 20px, 0) rotate(102deg);
 }
 #page19 .people-leftFoot1 {
   position: absolute;
@@ -1951,6 +2154,760 @@ body {
 }
 #page19 .font-I {
   transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page19 .font-love {
+  transform: translate3d(-40px, 4px, 0) rotate(-13deg);
+}
+#page20 .people {
+  transform: translate3d(125px, 100px, 0);
+}
+#page20 .people-body {
+  transform: translate3d(-16px, 79px, 0) rotate(95deg);
+}
+#page20 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-22px, 34px, 0) rotate(30deg);
+}
+#page20 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-36px, -1px, 0) rotate(110deg);
+}
+#page20 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(25px, 42px, 0) rotate(-10deg);
+}
+#page20 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(54px, 14px, 0) rotate(98deg);
+}
+#page20 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(2px, 138px, 0) rotate(65deg);
+}
+#page20 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(7px, 191px, 0) rotate(105deg);
+}
+#page20 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-21px, 141px, 0) rotate(110deg);
+}
+#page20 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-40px, 192px, 0) rotate(110deg);
+}
+#page20 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page20 .font-love {
+  transform: translate3d(114px, 6px, 0) rotate(-13deg);
+}
+#page21 .people {
+  transform: translate3d(250px, 100px, 0);
+}
+#page21 .people-body {
+  transform: translate3d(-16px, 79px, 0) rotate(95deg);
+}
+#page21 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-22px, 34px, 0) rotate(30deg);
+}
+#page21 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-36px, -1px, 0) rotate(110deg);
+}
+#page21 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(25px, 42px, 0) rotate(-10deg);
+}
+#page21 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(54px, 14px, 0) rotate(98deg);
+}
+#page21 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-3px, 141px, 0) rotate(75deg);
+}
+#page21 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-9px, 193px, 0) rotate(120deg);
+}
+#page21 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-27px, 141px, 0) rotate(120deg);
+}
+#page21 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-56px, 191px, 0) rotate(120deg);
+}
+#page21 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page21 .font-love {
+  transform: translate3d(239px, 6px, 0) rotate(-13deg);
+}
+#page22 .people {
+  transform: translate3d(250px, 100px, 0);
+}
+#page22 .people-body {
+  transform: translate3d(-25px, 79px, 0) rotate(110deg);
+}
+#page22 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-22px, 29px, 0) rotate(40deg);
+}
+#page22 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-26px, -6px, 0) rotate(128deg);
+}
+#page22 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(25px, 37px, 0) rotate(-20deg);
+}
+#page22 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(46px, 6px, 0) rotate(83deg);
+}
+#page22 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-18px, 141px, 0) rotate(70deg);
+}
+#page22 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-10px, 194px, 0) rotate(93deg);
+}
+#page22 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-37px, 141px, 0) rotate(105deg);
+}
+#page22 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-50px, 191px, 0) rotate(105deg);
+}
+#page22 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page22 .font-love {
+  transform: translate3d(233px, -4px, 0) rotate(-5deg);
+}
+#page23 .people {
+  transform: translate3d(250px, 100px, 0);
+}
+#page23 .people-body {
+  transform: translate3d(-25px, 79px, 0) rotate(110deg);
+}
+#page23 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(17px, 29px, 0) rotate(140deg);
+}
+#page23 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(55px, -3px, 0) rotate(140deg);
+}
+#page23 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(20px, 55px, 0) rotate(30deg);
+}
+#page23 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(57px, 49px, 0) rotate(133deg);
+}
+#page23 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-18px, 141px, 0) rotate(70deg);
+}
+#page23 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-10px, 194px, 0) rotate(93deg);
+}
+#page23 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-37px, 141px, 0) rotate(105deg);
+}
+#page23 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-50px, 191px, 0) rotate(105deg);
+}
+#page23 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page23 .font-love {
+  transform: translate3d(440px, 50px, 0) rotate(-5deg);
+}
+#page24 .people {
+  transform: translate3d(250px, 100px, 0);
+}
+#page24 .people-body {
+  transform: translate3d(-25px, 79px, 0) rotate(110deg);
+}
+#page24 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(24px, 47px, 0) rotate(10deg);
+}
+#page24 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(71px, 55px, 0) rotate(10deg);
+}
+#page24 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(20px, 55px, 0) rotate(30deg);
+}
+#page24 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(62px, 79px, 0) rotate(30deg);
+}
+#page24 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-18px, 141px, 0) rotate(70deg);
+}
+#page24 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-10px, 194px, 0) rotate(93deg);
+}
+#page24 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-37px, 141px, 0) rotate(105deg);
+}
+#page24 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-50px, 191px, 0) rotate(105deg);
+}
+#page24 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page24 .font-love {
+  transform: translate3d(440px, 150px, 0) rotate(-5deg);
+}
+#page25 .people {
+  transform: translate3d(250px, 100px, 0);
+}
+#page25 .people-body {
+  transform: translate3d(-25px, 79px, 0) rotate(110deg);
+}
+#page25 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(10px, 65px, 0) rotate(75deg);
+}
+#page25 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(21px, 105px, 0) rotate(75deg);
+}
+#page25 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-1px, 65px, 0) rotate(100deg);
+}
+#page25 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-1px, 110px, 0) rotate(80deg);
+}
+#page25 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-18px, 141px, 0) rotate(70deg);
+}
+#page25 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-10px, 194px, 0) rotate(93deg);
+}
+#page25 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-37px, 141px, 0) rotate(105deg);
+}
+#page25 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-50px, 191px, 0) rotate(105deg);
+}
+#page25 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page25 .font-love {
+  transform: translate3d(440px, 192px, 0) rotate(-5deg);
+}
+#page26 .people {
+  transform: translate3d(230px, 100px, 0);
+}
+#page26 .people-body {
+  transform: translate3d(-14px, 82px, 0) rotate(95deg);
+}
+#page26 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(17px, 62px, 0) rotate(45deg);
+}
+#page26 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(51px, 96px, 0) rotate(45deg);
+}
+#page26 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-7px, 68px, 0) rotate(105deg);
+}
+#page26 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-16px, 110px, 0) rotate(100deg);
+}
+#page26 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(2px, 141px, 0) rotate(70deg);
+}
+#page26 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(21px, 194px, 0) rotate(70deg);
+}
+#page26 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-17px, 141px, 0) rotate(105deg);
+}
+#page26 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-30px, 191px, 0) rotate(105deg);
+}
+#page26 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page26 .font-love {
+  transform: translate3d(440px, 192px, 0) rotate(-5deg);
+}
+#page27 .people {
+  transform: translate3d(190px, 100px, 0);
+}
+#page27 .people-body {
+  transform: translate3d(-14px, 82px, 0) rotate(95deg);
+}
+#page27 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(17px, 62px, 0) rotate(45deg);
+}
+#page27 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(51px, 96px, 0) rotate(45deg);
+}
+#page27 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-18px, 65px, 0) rotate(135deg);
+}
+#page27 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-51px, 98px, 0) rotate(135deg);
+}
+#page27 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(2px, 141px, 0) rotate(70deg);
+}
+#page27 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(21px, 194px, 0) rotate(70deg);
+}
+#page27 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-17px, 141px, 0) rotate(105deg);
+}
+#page27 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-30px, 191px, 0) rotate(105deg);
+}
+#page27 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page27 .font-love {
+  transform: translate3d(440px, 192px, 0) rotate(-5deg);
+}
+#page28 .people {
+  transform: translate3d(150px, 100px, 0);
+}
+#page28 .people-body {
+  transform: translate3d(-14px, 82px, 0) rotate(95deg);
+}
+#page28 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(17px, 62px, 0) rotate(45deg);
+}
+#page28 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(51px, 96px, 0) rotate(45deg);
+}
+#page28 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-18px, 65px, 0) rotate(135deg);
+}
+#page28 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-47px, 100px, 0) rotate(125deg);
+}
+#page28 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(2px, 141px, 0) rotate(70deg);
+}
+#page28 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(31px, 192px, 0) rotate(50deg);
+}
+#page28 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-17px, 141px, 0) rotate(105deg);
+}
+#page28 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-22px, 196px, 0) rotate(85deg);
+}
+#page28 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page28 .font-love {
+  transform: translate3d(440px, 192px, 0) rotate(-5deg);
+}
+#page29 .people {
+  transform: translate3d(110px, 100px, 0);
+}
+#page29 .people-body {
+  transform: translate3d(-14px, 82px, 0) rotate(95deg);
+}
+#page29 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(17px, 62px, 0) rotate(45deg);
+}
+#page29 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(51px, 96px, 0) rotate(45deg);
+}
+#page29 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-18px, 65px, 0) rotate(135deg);
+}
+#page29 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-47px, 100px, 0) rotate(125deg);
+}
+#page29 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-4px, 144px, 0) rotate(80deg);
+}
+#page29 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(17px, 194px, 0) rotate(55deg);
+}
+#page29 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-14px, 141px, 0) rotate(100deg);
+}
+#page29 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-14px, 196px, 0) rotate(80deg);
+}
+#page29 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page29 .font-love {
+  transform: translate3d(440px, 192px, 0) rotate(-5deg);
+}
+#page30 {
+  display: block;
+}
+#page30 .people {
+  transform: translate3d(70px, 100px, 0);
+}
+#page30 .people-body {
+  transform: translate3d(-14px, 82px, 0) rotate(95deg);
+}
+#page30 .people-leftHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(17px, 62px, 0) rotate(45deg);
+}
+#page30 .people-leftHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(24px, 99px, 0) rotate(115deg);
+}
+#page30 .people-rightHand1 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-18px, 65px, 0) rotate(135deg);
+}
+#page30 .people-rightHand2 {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-58px, 73px, 0) rotate(25deg);
+}
+#page30 .people-leftFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(10px, 141px, 0) rotate(50deg);
+}
+#page30 .people-leftFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(54px, 175px, 0) rotate(25deg);
+}
+#page30 .people-rightFoot1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-24px, 141px, 0) rotate(120deg);
+}
+#page30 .people-rightFoot2 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #2b2b2b;
+  transform: translate3d(-34px, 196px, 0) rotate(80deg);
+}
+#page30 .font-I {
+  transform: translate3d(380px, 136px, 0) rotate(0deg);
+}
+#page30 .font-love {
+  transform: translate3d(440px, 192px, 0) rotate(-5deg);
 }
 /*播放部分，结束*/
 /*播放控制器部分，开始*/

@@ -25,6 +25,15 @@
 .playBox-icon:hover {
   color: #787878;
 }
+.font-love-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  color: #fe0002;
+  font-size: 7.5em;
+}
 .playBox-iconBig {
   font-size: 3.5em;
 }
