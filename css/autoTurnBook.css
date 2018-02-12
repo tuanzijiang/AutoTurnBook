@@ -1445,6 +1445,14 @@ body {
   bottom: 5px;
   right: 5px;
 }
+@keyframes musicRotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 .people {
   position: absolute;
   overflow: visible;
@@ -1557,6 +1565,18 @@ body {
   height: 85px;
   background: #2b2b2b;
   transform: translate3d(55px, 85px, 0);
+}
+.separate-line {
+  position: absolute;
+  border: 1px solid #8dbbf7;
+  height: 360px;
+  width: 0;
+}
+.secret-font {
+  display: inline-block;
+  font-size: 1.1em;
+  width: 1em;
+  position: absolute;
 }
 #page0 .page0-font {
   background: white;
@@ -5155,6 +5175,21 @@ body {
 #page52 .font-Y {
   transform: translate3d(412px, 142px, 0);
 }
+#page52 #font-music {
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  animation: musicRotate 5s linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  transition: all .3s;
+}
+#page52 #font-music:hover {
+  top: 10px;
+  left: 43px;
+}
 #page53 .people {
   transform: translate3d(574px, 100px, 0);
 }
@@ -5450,6 +5485,51 @@ body {
 }
 #page56 .font-Y {
   transform: translate3d(412px, 142px, 0);
+}
+#page57 .separate-line1 {
+  transform: translate3d(500px, 56px, 0);
+}
+#page57 .separate-line2 {
+  transform: translate3d(448px, 56px, 0);
+}
+#page57 .separate-line3 {
+  transform: translate3d(396px, 56px, 0);
+}
+#page57 .separate-line4 {
+  transform: translate3d(344px, 56px, 0);
+}
+#page57 .separate-line5 {
+  transform: translate3d(292px, 56px, 0);
+}
+#page57 .separate-line6 {
+  transform: translate3d(240px, 56px, 0);
+}
+#page57 .separate-line7 {
+  transform: translate3d(188px, 56px, 0);
+}
+#page57 .secret-font1 {
+  transform: translate3d(520px, 52px, 0);
+}
+#page57 .secret-font2 {
+  transform: translate3d(468px, 84px, 0);
+}
+#page57 .secret-font3 {
+  transform: translate3d(416px, 84px, 0);
+}
+#page57 .secret-font4 {
+  transform: translate3d(364px, 84px, 0);
+}
+#page57 .secret-font5 {
+  transform: translate3d(312px, 84px, 0);
+}
+#page57 .secret-font6 {
+  transform: translate3d(260px, 84px, 0);
+}
+#page57 .secret-font7 {
+  transform: translate3d(208px, 84px, 0);
+}
+#page57 .secret-font8 {
+  transform: translate3d(156px, 298px, 0);
 }
 /*播放部分，结束*/
 /*播放控制器部分，开始*/

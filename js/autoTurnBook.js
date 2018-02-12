@@ -6,6 +6,8 @@ var changeByHand=false;//是否进入手动翻书
 var intervalCSS=600;//翻一次页面的ms数
 var autoFuncHandler;//自动翻书的句柄
 var turnDirection=true;//翻页的方向,true-正向,false-负向
+var musicFlag=false;//是否播放音乐
+
 
 // 事件捆绑
 //播放事件
@@ -74,6 +76,27 @@ document.getElementById("playBox-last").addEventListener("click",function () {
         },intervalCSS/4);
     }
 });
+//播放音频
+document.getElementById("font-music").addEventListener("click",function (event) {
+    if(!musicFlag){
+        //修改muscic icon动画属性
+        event.target.style.animationPlayState="running";
+        event.target.style.webkitAnimationPlayState="running";
+        musicFlag=true;
+        document.getElementById("page52-music-audio").play();
+    }
+    else{
+        //修改music icon动画属性
+        event.target.style.animationPlayState="paused";
+        event.target.style.webkitAnimationPlayState="paused";
+        musicFlag=false;
+        document.getElementById("page52-music-audio").pause();
+    }
+});
+//音频监听
+document.getElementById("page52-music-audio").ontimeupdate=function (event) {
+  audioWatch(event);
+};
 
 //函数
 //跳转到任意页面
@@ -129,3 +152,23 @@ var turnToLast=function () {
         currentPage=currentPage-1>0?currentPage-1:0;
     }
 };
+//音频监听函数
+var audioWatch=function (event) {
+    var poem=["致王女士","我想跑来找你","只因为","当一个人想和另一个人共度余生","真的很希望余生马就能开始","难道不是吗","情人节快乐","你的小可爱"];
+    var currentTime=event.target.currentTime;
+    console.log(currentTime+"s，歌能尽，爱无穷。团子每时每秒都很爱票票，第52秒就是钥匙哦");
+    if(currentTime>=52&&currentTime<53){
+        totalPage=57;
+        for(var i=1;i<=poem.length;i++){
+            document.getElementsByClassName("secret-font"+i)[0].innerHTML=poem[i-1];
+        }
+    }
+    if(currentTime>53){
+        totalPage=56;
+        for(var i=1;i<=poem.length;i++){
+            document.getElementsByClassName("secret-font"+i)[0].innerHTML="";
+        }
+    }
+};
+
+

@@ -84,6 +84,12 @@ html,body{
   .pageGenerate(@pageNum,@i+1);
 }
 //播放部分，page生成器，结束
+//播放部分，music旋转，开始
+@keyframes musicRotate {
+  from {transform: rotateZ(0deg);}
+  to {transform:  rotateZ(360deg);}
+}
+//播放部分，music旋转，结束
 //播放部分，小人组件，开始
 .people{
   position: absolute;
@@ -207,6 +213,20 @@ html,body{
   transform: translate3d(55px,85px,0);
 }
 //播放部分，Y组件，结束
+//播放部分，分隔行，开始
+.separate-line{
+  position: absolute;
+  border: 1px solid #8dbbf7;
+  height: 360px;
+  width: 0;
+}
+.secret-font{
+  display: inline-block;
+  font-size: 1.1em;
+  width: 1em;
+  position: absolute;
+}
+//播放部分，分隔行，结束
 //播放部分，每页单独样式，开始
 #page0{
   .page0-font{
@@ -2715,6 +2735,21 @@ html,body{
   .font-Y{
     transform: translate3d(412px,142px,0);
   }
+  #font-music{
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    animation: musicRotate 5s linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    transition: all .3s;
+  }
+  #font-music:hover{
+    top:10px;
+    left: 43px;
+  }
 }
 
 #page53{
@@ -2926,6 +2961,54 @@ html,body{
   }
   .font-Y{
     transform: translate3d(412px,142px,0);
+  }
+}
+
+#page57{
+  .separate-line1{
+    transform: translate3d(500px,56px,0);
+  }
+  .separate-line2{
+    transform: translate3d(448px,56px,0);
+  }
+  .separate-line3{
+    transform: translate3d(396px,56px,0);
+  }
+  .separate-line4{
+    transform: translate3d(344px,56px,0);
+  }
+  .separate-line5{
+    transform: translate3d(292px,56px,0);
+  }
+  .separate-line6{
+    transform: translate3d(240px,56px,0);
+  }
+  .separate-line7{
+    transform: translate3d(188px,56px,0);
+  }
+  .secret-font1{
+    transform: translate3d(520px,52px,0);
+  }
+  .secret-font2{
+    transform: translate3d(468px,84px,0);
+  }
+  .secret-font3{
+    transform: translate3d(416px,84px,0);
+  }
+  .secret-font4{
+    transform: translate3d(364px,84px,0);
+  }
+  .secret-font5{
+    transform: translate3d(312px,84px,0);
+  }
+  .secret-font6{
+    transform: translate3d(260px,84px,0);
+  }
+  .secret-font7{
+    transform: translate3d(208px,84px,0);
+  }
+  .secret-font8{
+    transform: translate3d(156px,298px,0);
   }
 }
 
