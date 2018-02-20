@@ -1,0 +1,32 @@
+{
+  "name": "autoturnbook",
+  "version": "1.0.0",
+  "description": "A auto-played book for love",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumAlbert/AutoTurnBook.git"
+  },
+  "author": "Albert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumAlbert/AutoTurnBook/issues"
+  },
+  "homepage": "https://github.com/sumAlbert/AutoTurnBook#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^3.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "minify-html": "0.0.2"
+  }
+}
